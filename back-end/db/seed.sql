@@ -1,6 +1,6 @@
 \c cta_dev;
 
-INSERT INTO snacks (name,description,price,rating,feautured,image ) VALUES
+INSERT INTO candles (name,description,price,rating,feautured,image ) VALUES
 ('fenwick Candles','Organic Coconut wax candle',18.99,4.5,true,'https://images.unsplash.com/photo-1588372405219-e40d64efafcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'),
 ('Southern Elegance','Front Porch Citrus & Eucalyptus',21.99,4.1,true,'https://images.unsplash.com/photo-1609536336627-9227b5339917?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8MjY3MTE2Nzl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60'),
 ('Nudesse','OverRose',11.99,3.5,true,'https://images.unsplash.com/photo-1608977230965-6a1b92233ac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'),

@@ -11,22 +11,13 @@ app.use(express.json()); // Parse incoming JSON
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.send("Welcome to the Candle Shop!");
 });
 
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
 /////////////////////////////////////
-const db = require("./db/dbConfig.js");
 
-app.get("/test", async (req, res) => {
-  try {
-    const allDays = await db.any("SELECT * FROM test");
-    res.json(allDays);
-  } catch (err) {
-    res.json(err);
-  }
-});
 
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
