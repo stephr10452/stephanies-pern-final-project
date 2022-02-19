@@ -1,8 +1,10 @@
 const db = require("../db/dbConfig.js");
 
 const getAllCandles = async() => {
-    try{
+    try{  
+        console.log("hello")
         const allCandles = await db.any('SELECT * FROM candles;');
+        console.log(allCandles)
         return allCandles;
       }  catch(error) {
             return error;
