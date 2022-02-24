@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 const candleControllers = require("./controllers/candleControllers")
 
-app.use("/candles",candleControllers);
+app.use("/candles", candleControllers);
 
 /////////////////////////////////////
 // REMOVE AFTER SUCCESSFUL DEPLOYMENT
