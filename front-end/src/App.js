@@ -1,21 +1,20 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './index.css';
-
-import Home from "./Pages/Home";
+import Home from "./Pages/Home"
 import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import Edit from "./Pages/Edit";
-import FourOFour from "./Pages/FourOFour";
+import FourOFour from "./Pages/ForOfFour";
 
-import NavBar from "./Components/NavBar";
+
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className='App'>
     <Router>
-      <NavBar />
+      <Navbar />
       <main>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -24,6 +23,7 @@ function App() {
         <Route path="/candles/:id" element={<Show />} />
         <Route path="/candles/:id/edit" element={<Edit />} />
         <Route path="*" element={<FourOFour />} />
+        
       </Routes>
       </main>
      </Router>

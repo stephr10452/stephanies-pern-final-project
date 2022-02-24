@@ -1,13 +1,32 @@
-body {
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply text-white bg-teal-300 rounded-md shadow-md p-3 hover:scale-[1.1] ease-in duration-100 cursor-pointer hover:bg-orange-200
+}
+@tailwind utilities;
+
+
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:  'Urbanist', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+.allCandles {
+  width: 250px;
 }
+
+.candles{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.singleImage {
+  width: 350px;
+}
+

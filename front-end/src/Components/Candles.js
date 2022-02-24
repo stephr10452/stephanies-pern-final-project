@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import Candle from './Candle';
 
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -16,5 +17,13 @@ function Candles() {
         })
     }, [API_URL]);
 
-    return 
+    return (
+        <div className="flex flex-wrap p-5 items-center justify-center bg-teal-300" >
+            {candles.map((candle, id) => {
+                                 return ( <Candle key={id} candle={candle} id={id}/> );
+                             })}
+       
+        </div>
+    )
 }
+export default Candles
