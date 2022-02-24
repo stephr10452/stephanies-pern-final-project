@@ -15,9 +15,9 @@ function Candle({candle}) {
   const  iconStyle = "h-[40px] w-[40px] rounded-full bg-white flex items-center justify-center m-3 cursor-pointer hover:bg-teal hoover:text-white hover:scale-[1.1] ease in duration-100 cursor-pointer"
  return (
      <div className='flex flex-1 items-center justify-center min-w-[250px] min-h-[350] overflow-hidden rounded-md  shadow-lg m-2 relative' onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverExit}>
-         <p>
+         
          <img className="allCandles" src={candle.image} alt='{candle.image}'/>
-         </p>
+         
   
   <div className={`flex items-center justify-center w-[100%] h-[100%] absolute ease-in duration-100 ` + hoverEffect}>
   
