@@ -99,7 +99,7 @@ return (
         </div>
         <br/>
         <div className='candleNB'>
-        <button onClick={handleSubmit}>Create New Snack</button>
+        <button onClick={handleSubmit}>Create New Candle</button>
                     
                     <br/>
                     <Link to = {`/candles/${id}`}>
