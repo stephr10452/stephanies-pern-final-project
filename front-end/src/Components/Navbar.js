@@ -1,5 +1,6 @@
 import React from 'react';
-import {Search,Badge, ShoppingCartCheckout} from  '@mui/icons-material'
+import {Search,Badge, ShoppingCartCheckout} from  '@material-ui/icons'
+import {Link} from 'react-router-dom'
 
 function Navbar(){
   return <div className='navbar h-[60px] shadow-md relative z-10'>
@@ -21,11 +22,10 @@ function Navbar(){
       </div>
       {/* right  */}
       <div className="right flex flex-1 items-center justify-end">
-        <div className="text-[14px] cursor-pointer ml-[25px]">Register</div>
-        <div className="text-[14px] cursor-pointer ml-[25px]"> Sign In</div>
-        <Badge badgeContent={2} color='primary'>
-          <ShoppingCartCheckout  className="text-[14px] cursor-pointer ml-[25px]"/>
-        </Badge>
+        <button>
+              <Link to="/candles/new">Make Your own Candle</Link>
+          </button>
+
       </div>
     </div>
 
