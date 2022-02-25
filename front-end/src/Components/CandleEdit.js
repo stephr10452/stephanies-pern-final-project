@@ -84,7 +84,7 @@ return (
         </div> 
         <br/> 
         <div>
-             <label htmlFor='rating'>Added Sugar</label><br/>
+             <label htmlFor='rating'>Rating</label><br/>
              <input
                id = 'rating'
                value = {candle.rating}
